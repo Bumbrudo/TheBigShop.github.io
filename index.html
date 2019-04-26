@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+	<meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+	<meta name="author" content="Codrops" />
+
+	<title>TheBigShop</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="css/modal1.css"/>
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main_goodslider.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css" />
+
+
+			
+</head>
+<body>
+	 <script>
+        var articleLink = '/scripts/forms/610-stepperjs-uvelichenie-umenshenie-znacheniy-v-input-typenumber-zadannym-shagom.html';
+    </script>
+
+    <div id="test-popup" class="white-popup2 mfp-hide">
+  		<div class="table-wrapper">
+			<div class="box-table">
+				<table class="table">
+					<caption>Men’s Shirts Size Guide</caption>
+					
+					<tr>
+						<th>Size</th>
+						<th colspan="2">Chest Measurement</th>
+						<th colspan="2">Neck Measurement</th>
+					</tr>
+					<tr class="grey_style">
+						<td></td>
+						<td>INCHES</td><td>CM</td>
+						<td>INCHES</td><td>CM</td>
+					</tr>
+					<tr>
+						<td class="grey_style">XXS</td>
+						<td>32-34</td><td>81-86</td>
+						<td>14.25</td><td>81-86</td>
+					</tr>
+					<tr>
+						<td class="grey_style">XS</td>
+						<td>34-36</td><td>86-91</td>
+						<td>14.5</td><td>86-91</td>
+					</tr>
+					<tr>
+						<td class="grey_style">S</td>
+						<td>36-38</td><td>91-96</td>
+						<td>15</td><td>91-96</td>
+					</tr>
+					<tr>
+						<td class="grey_style">M</td>
+						<td>38-40</td><td>96-101</td>
+						<td>16</td><td>96-101</td>
+					</tr>
+					<tr>
+						<td class="grey_style">L</td>
+						<td>40-42</td><td>101-106</td>
+						<td>17</td><td>101-106</td>
+					</tr>
+					<tr>
+						<td class="grey_style">XL</td>
+						<td>42-44</td><td>106-111</td>
+						<td>17.5</td><td>106-111</td>
+					</tr>
+					<tr>
+						<td class="grey_style">XXL</td>
+						<td>44-46</td><td>111-116</td>
+						<td>18</td><td>111-116</td>
+					</tr>
+
+				</table>
+				
+			</div>
+		</div>
+</div>
+   
+		<div class="gallery">
+
+			<a href="img/image1xxl.png" class="gallery-img__item"><img src="img/scarf_1.jpg" alt=""></a>
+			<a href="img/product-img.png" class="gallery-img__item"><img src="img/scarf_2.jpg" alt=""></a>
+			<a href="img/product-img5.png" class="gallery-img__item"><img src="img/scarf_3.jpg" alt=""></a>
+			<a href="img/product-img5.png" class="gallery-img__item"><img src="img/scarf_3.jpg" alt=""></a>
+		
+		</div>
+
+ <div class="hidden"></div>
+
+ <div id="openModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body-2 clearfix">    
+      	  
+	<div class="md-content">
+	<div class="md-content__img">
+		<div class="single-goods">
+        <div class="single-goods__container">
+
+            <div class="single-goods-left">
+            	<div class="goods-img-max">
+                    <img id="goods-max" src="img/scarf_3.jpg" alt="">
+                </div>
+            	<div class="goods-img-min">
+                    <div class="goods-img-min__item"><img class="goods-min" src="img/scarf_3.jpg" alt=""></div>
+                    <div class="goods-img-min__item"><img class="goods-min" src="img/scarf_2.jpg" alt=""></div>
+                    <div class="active"><img class="goods-min" src="img/scarf_1.jpg" alt=""></div>
+                </div>
+            	 
+                
+                <div class="custom-radios">
+					  <input type="radio" name="c" id="c0" />
+					  <label for="c0">c0</label>
+					  <input type="radio" name="c" id="c1" checked="checked"/>
+					  <label for="c1">c1</label>
+					  <input type="radio" name="c" id="c2"/>
+					  <label for="c2">c2</label>
+					  <input type="radio" name="c" id="c3"/>
+					  <label for="c3">c3</label>
+					  <input type="radio" name="c" id="c4"/>
+					  <label for="c4">c3</label>
+					</div>
+					<div class="goods-img-min__zoom"><a href="#" id="open-popup"><span class="icon-search"></span></a></div>
+           </div>
+        </div>
+    </div>
+</div>
+
+<div class="md-content__describe">
+
+				<div class="cont-right">
+					 <div class="modal-header">
+        					<a href="#close" title="Close" class="close">×</a>
+      				</div>
+						<div class="md-content__header">
+							<span class="md-content__name">Shoes</span>
+							<span class="md-content__mark">Adidas Originals</span>
+						</div>
+
+						<h3>Adidas Originals <br> Powerphase OG Sneakers</h3>
+				
+					<p class="md-content-p">With a brand history stretching back over 60 years, adidas Originals draw inspiration from street culture and retro styles to provide fresh vintage inspired menswear. </p>
+
+					<div class="md-content__listrl">
+					<div class="md-content__listleft">
+						<ul>
+						<li>Canvas textile</li>
+						<li>Suede trim</li>
+						<li>Shaped, padded cuffs</li>
+						<li>Lace fastening</li>
+					</ul>
+					</div>
+					<div class="md-content__listright">
+						<ul>
+						<li>Canvas textile</li>
+						<li>Suede trim</li>
+						<li>Shaped, padded cuffs</li>
+						<li>Lace fastening</li>
+					</ul>
+					</div>
+				</div>
+					
+					<!--<button class="md-close">Close me!</button>-->
+					<div class="md-contentfooter">
+						
+						<div class="md-contentfooter__footer">
+							<span class="price">$56</span>
+							<span class="discount">$60</span>
+						
+						</div>
+						<div class="md-contentfooter__card">
+								<select class="styler">
+
+									<option value="">Size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+
+							        <div class="stepper stepper--style-2 js-spinner">
+							            <input autofocus type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+							            <div class="stepper__controls">
+							                <button type="button" spinner-button="up">+</button>
+							                <button type="button" spinner-button="down">-</button>
+							            </div>
+
+							        </div>
+							        	</div> 
+							      <div class="md-contentfooterF">
+									<a href="#test-popup" class="open-popup-link"><span class="icon icon-heart-plus"></span> Size Guide</a>
+
+								</div>
+
+									
+							 <div class="blockfavorite">
+							<a href="#" class="btn">Add to card</a>
+							
+							<a href="#" class="md-contentfooter__favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div> 
+
+	<div class="md-content-Line"></div>
+		<div class="mdcontent-wrap">
+
+			<div class="tabList">
+				
+			    <input id="tab1"  type="radio" name="tabs" checked>
+			    	<label for="tab1" class="mdcontent-list__link" title="Product Info">Product Info</label>
+			 
+			    <input id="tab2" type="radio" name="tabs">
+			    	<label for="tab2" class="mdcontent-list__link" title="Delivery">Delivery</label>
+			 
+			    <input id="tab3" type="radio" name="tabs">
+			    	<label for="tab3" class="mdcontent-list__link" title="Returns">Returns</label>
+			
+			    <section id="content-tab1">
+			    	<div class="scrollbar" id="style-16">
+			        <p class="dline"><b>Standard Shipping:</b> Shipping within 6 business days, $4 - FREE (spend over $40)<br>
+									Orders under $40 may be shipped on an untracked service and may take longer to arrive<br>
+									<b>4-Day Shipping:</b> $6.00<br>
+			  						<b>2-Day Shipping:</b> $12.00 or FREE when you spend $140* </p>
+			  						<div class="force-overflow"></div>
+			  					</div>
+			    </section>  
+			    <section id="content-tab2">
+			    	<div class="scrollbar" id="style-16">
+			    	
+
+			       <p class="dline">With a brand history stretching back over 60 years, adidas Originals draw inspiration from street culture and retro styles to provide fresh vintage inspired menswear.
+									With a brand history stretching back over 60 years, adidas Originals draw inspiration from street culture and retro styles to provide fresh vintage inspired menswear </p>
+										<div class="force-overflow"></div>
+			  					</div>
+
+			    </section> 
+			    <section id="content-tab3">
+			    	<div class="scrollbar" id="style-16">
+			        <p class="dline">Orders under $40 may be shipped on an untracked service and may take longer to arrive
+									With a brand history stretching back over 60 years, adidas Originals draw inspiration from street culture and retro styles to provide fresh vintage inspired menswear</p>
+										<div class="force-overflow"></div>
+			  					</div>
+			    </section> 		    
+			</div>
+
+			<div class="md-content-Line2"></div>
+				<div class="social-box">
+						<div class="social-box-header">
+							<span class="icon icon-heart-plus"></span>
+							<p>Share product</p>
+						</div>
+					<div class="social-box__top"> 
+						<a href="#" class="btn_1"><span class="icon icon-heart-plus"> 24K</span></a>
+						<a href="#" class="btn"><span class="icon icon-heart-plus"> 334K</span></a>
+					</div>
+					<div class="social-box__bottom"> 
+						<a href="#" class="btn"><span class="icon icon-heart-plus"> 8M</span></a>
+						<a href="#" class="btn_2"><span class="icon icon-heart-plus">356K</span></a>
+					</div>
+				</div>
+			 </div>
+   		 </div>
+  	</div>
+</div>
+</div>
+		
+<div class="main-wrapper">
+
+	<header class="header">
+		<button class="toggle-menu">
+			<span class="icon icon-menu"></span>
+		</button>
+		<div class="dropdown-content dropdown-content--menu">
+			<div class="dropdown-content__item">
+				<h4 class="dropdown-content__title">Men</h4>
+				<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Bags</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Caps & Hats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Gifts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Grooming</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jeans</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jewellery</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Joggers</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jumpers & Cardigans</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Leather Jackets</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Long Sleeve T-Shirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Loungewear</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Polo Shirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Sunglasses</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Swimwear</a>
+						</li>
+					</ul>
+			</div>
+			<div class="dropdown-content__item">
+				<h4 class="dropdown-content__title">Women</h4>
+				<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Bags</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Caps & Hats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Gifts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Grooming</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+					</ul>
+
+					<h4 class="dropdown-content__title">Accessories</h4>
+				<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Bags</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Caps & Hats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Gifts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Grooming</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+						
+						
+					</ul>
+			</div>
+			<div class="dropdown-content__item">
+				<h4 class="dropdown-content__title">Kids</h4>
+				<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Bags</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Caps & Hats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Gifts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Grooming</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+					</ul>
+						<h4 class="dropdown-content__title"><span class="text-error">Sale -70%</span><br>Lookbook<br>Blog<br></h4>
+					<div class="hr"></div>
+
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Shipping</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Payment</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Help?</a>
+						</li>
+					
+					</ul>
+			</div>
+			<div class="dropdown-content__item"></div>
+						
+					</div>
+			<div class="logo">
+				<a href="#"><img src="img/logo1.png" alt="" class="hidden-iphone"></a>
+				<a href="#"><img src="img/logo-mobile1.png" alt="" class="hidden-ipad"></a>
+			</div>
+			<ul class="main-menu">
+				<li class="main-menu_item dropdpwn">
+					<a href="#" class="main-menu_link">Men <span class="icon-caret"></span></a>
+					<div class="dropdown-content">
+						<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Bags</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Caps & Hats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Gifts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Grooming</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jeans</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jewellery</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Joggers</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jumpers & Cardigans</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Leather Jackets</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Long Sleeve T-Shirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Loungewear</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Polo Shirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Sunglasses</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Swimwear</a>
+						</li>
+					</ul>
+					</div>
+				</li>
+				<li class="main-menu_item dropdpwn">
+					<a href="#" class="main-menu_link">Woman <span class="icon-caret"></span></a>
+					<div class="dropdown-content">
+						<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Shirts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Shoes, Boots & Trainers</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Shorts</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Suits & Blazers</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Sunglasses</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Swimwear</a>
+						</li>
+					</ul>
+					</div>
+				</li>
+				<li class="main-menu_item dropdown">
+					<a href="#" class="main-menu_link">Kids <span class="icon-caret"></span></a>
+					<div class="dropdown-content">
+						<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">New Arrivals</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Dresses</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Tops</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Sweaters & Knits</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="dropdown-menu__link">Rompers & Jumpsuits</a>
+						</li>
+					</ul>
+
+					</div>
+				</li>
+				<li class="main-menu_item"><a href="#" class="main-menu_link">Accessories <span class="icon-caret"></span></a></li>
+				<li class="main-menu_item"><a href="#" class="main-menu_link">Sale</a></li>
+				<li class="main-menu_item"><a href="#" class="main-menu_link">LookBook</a></li>
+				<li class="main-menu_item"><a href="#" class="main-menu_link">Blog</a></li>
+			</ul>
+
+			<div class="search">
+				<form action="">
+					<input type="text" class="form-control search__input" placeholder="Search" />
+					<input type="submit" value="&#xe90b;" class="search__button"/>
+				</form>
+			</div>
+
+			<div class="location">
+				<span class="icon-pin"></span>
+				<a href="#" class="location__link">Ukraine / $</a>
+			</div>
+			<ul class="profile-menu">
+				<li class="profile-menu_item dropdpwn dropdpwn--right dropdpwn--white ">
+					<a href="#" class="profile-menu_link">
+						<span class="basket">
+							<span class="icon-bag"></span>
+							<span class="badge">23</span>
+
+						</span>
+					<span class="b-price">$165</span>
+					</a>
+					<div class="dropdown-content">
+						<div class="cart">
+						<ul class="cart-list">
+						<li class="cart-list__item">
+						<div class="cart-list__img">
+								<a href="#"><img src="img/60x60.png" alt=""></a>
+						</div>
+						<div class="cart-list__info">
+							<h6 class="product__title"><a href="#">New Balance Men's Street Backpack</a></h6>
+							<div class="cart-list__details">
+								<span class="price">$495</span>
+								<span class="product__details">
+									<span>5</span> * 
+									<span>Black</span> * 
+									<span>1 pcs</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="cart-list__delete">
+							<a href="#" class="js-remove-cart">
+								<span class="icon-close"><span class="path1"></span><span class="path2"></span></span>
+						</div>
+
+						</li>
+						<li class="cart-list__item">
+						<div class="cart-list__img">
+								<a href="#"><img src="img/cart-list-img2.png" alt=""></a>
+						</div>
+						<div class="cart-list__info">
+							<h6 class="product__title"><a href="#">New Balance Men's Street Backpack</a></h6>
+							<div class="cart-list__details">
+								<span class="price">$275</span>
+								<span class="product__details">
+									<span>5</span> * 
+									<span>Black</span> * 
+									<span>1 pcs</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="cart-list__delete">
+							<a href="#" class="js-remove-cart">
+								<span class="icon-close"><span class="path1"></span><span class="path2"></span></span>
+						</div>
+
+						</li>
+						<li class="cart-list__item">
+						<div class="cart-list__img">
+								<a href="#"><img src="img/cart-list-img1.png" alt=""></a>
+						</div>
+						<div class="cart-list__info">
+							<h6 class="product__title"><a href="#">New Balance Men's Street Backpack</a></h6>
+							<div class="cart-list__details">
+								<span class="price price--danger">$165</span>
+								<span class="product__details">
+									<span>5</span> * 
+									<span>Orange</span> * 
+									<span>1 pcs</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="cart-list__delete">
+							<a href="#" class="js-remove-cart">
+								<span class="icon-close"><span class="path1"></span><span class="path2"></span></span>
+						</div>
+
+						</li>
+					</ul>
+					<div class="cart--footer">
+						<span class="total">Total</span>
+						<span class="price">$917</span>
+						<a href="#" class="btn">Check Out</a>
+					</div>
+
+				</div>
+
+
+
+
+					</div>
+				</li>
+				<li class="profile-menu_item dropdpwn dropdpwn--right dropdpwn--white">
+					<a href="#" class="profile-menu_link"><span class="icon-user"></span></a>
+
+					<div class="dropdown-content">
+						<ul class="user-menu">
+						<li class="user-menu__item">
+							<a href="#" class="user-menu__link"><span class="icon-user"></span>Profile</a>
+						</li>
+						<li class="user-menu__item">
+							<a href="#" class="user-menu__link"><span class="icon-heart"></span>Wishlist<span class="badge">2</span></a>
+						</li>
+						<li class="user-menu__item">
+							<a href="#" class="user-menu__link"><span class="icon-basket"></span>Orders</a>
+						</li>
+						<li class="user-menu__item">
+							<a href="#" class="user-menu__link"><span class="icon-gear"></span>Settings</a>
+						</li>
+						<li class="user-menu__item">
+							<a href="#" class="user-menu__link"><span class="icon-power"></span>Log outs</a>
+						</li>
+						
+					</ul>
+
+					</div>
+				</li>
+			
+
+		
+	</header>
+
+	<main class="main">
+		<div class="wrapper"></div>
+		<section class="header-inner" style="background-image: url('img/header-inner3.png');">
+			
+			<ul class="bread-crambs">
+				<li class="bread-crambs__item">
+				<a href="#" class="bread-crambs__link">Home</a> /
+				</li>
+				<li class="bread-crambs__item">
+					<a href="#" class="bread-crambs__link">Men</a> /
+				</li> 
+			</ul>
+			<span class="category">Men</span>
+			<h1 class="header-inner__title">Polo Shirts</h1>
+		</section>
+
+
+		<div class="tab-wrap">
+		<div class="filter">
+		<div class="filter-sidebar">
+			<button class="toggle-filter">
+				<span class="icon-sliders"></span>
+				<span class="sr-only">Filter</span>
+			</button>
+			<span class="filter__title">
+				56 items found
+			</span>
+		</div>
+		<div class="filter-content">
+			<span class="filter__title">Sort by</span>
+			<div class="sort">
+				<input type="radio" id="sort1" name="sort">
+				<label for="sort1" class="sort__item">Price<span class="icon-arrow-up-down"><span class="path1"></span></span></label>
+				<input type="radio" id="sort2" name="sort" checked="">
+				<label for="sort2" class="sort__item">Name <span class="icon-arrow-up-down"><span class="path1"></span></span></label>
+				<input type="radio" id="sort3" name="sort">
+				<label for="sort3" class="sort__item">Data<span class="icon-arrow-up-down"><span class="path1"></span></span></label>
+			</div>
+
+			<ul class="filter-list tabs">
+				<li class="filter-list__item">
+					<a href="#tab_1" class="filter-list__link"><span class="icon-list-2"></span></a>
+				</li>
+				<li class="filter-list__item active">
+					<a href="#tab_2" class="filter-list__link"><span class="icon-list"></span></a></li>
+				<li class="filter-list__item">
+					<a href="#tab_3" class="filter-list__link"><span class="icon-menu"></span></a></li>
+				
+			</ul>
+					
+		</div>
+	</div>
+
+		<div class="box-main">
+			<aside class="sidebar">
+				<div class="accordion">
+					<div class="accordion__head open">
+						<h5 class="accordion__title">Category</h5>
+						<span class="icon-plus"></span>
+					</div>
+					<div class="accordion__body">
+						<ul class="check-list">
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Bags</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Belts</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Hats, Scarves & Gloves</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Sunglasses</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Watches</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Wallets</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Boat Shoes</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Boots</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Deserts & Chukkas</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Espadrilles & Sandals</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Flip Flops</label>
+							</li>
+						</ul>
+
+					</div>
+					<div class="accordion__head">
+						<h5 class="accordion__title">Brand</h5>
+						<span class="icon-plus"></span>
+					</div>
+					<div class="accordion__body" style="display:none;">
+						<ul class="check-list">
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Bags</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Belts</label>
+							</li>
+						</ul>
+					</div>
+					<div class="accordion__head">
+						<h5 class="accordion__title">Size</h5>
+						<span class="icon-plus"></span>
+					</div>
+						<div class="accordion__body" style="display:none;">
+						<ul class="check-list check-list--column">
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">S</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">XL</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">M</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">XXL</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">L</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">XXXL</label>
+							</li>
+						</ul>
+					</div>
+					<div class="accordion__head">
+						<h5 class="accordion__title">Price</h5>
+						<span class="icon-minus"></span>
+					</div>
+					<div class="accordion__body" style="display:none;">
+						<div id="slider-range"></div>
+						<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+						<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					</div>
+					<div class="accordion__head">
+						<h5 class="accordion__title">Color</h5>
+						<span class="icon-plus"></span>
+					</div>
+					<div class="accordion__body" style="display:none;">
+						<ul class="check-list check-list--column">
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Beige</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Multi</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Black</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Navy</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Blue</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Orange</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Brown</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Pink</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Copper</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Purple</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Green</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Red</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Gray</label>
+							</li>
+							<li class="check-list__item">
+								<input type="checkbox" class="styler" id="check-list1">
+								<label for="check-list1" class="check-list__text">Tan</label>
+							</li>
+						</ul>
+					</div>
+					<div class="accordion__body" style="display:none;">22</div>
+				</div>
+			</aside>
+
+
+			<div class="content">
+				<div class="box-tab-cont"><!--блоки с контентом-->
+				<div class="tab-cont hide" id="tab_1">
+					<div class="box-product">
+						
+						<div class="product product--horizontal">
+						<div class="product__img">
+							<img src="img/90x90_1.png" alt="">
+							
+						</div>
+						<div class="product__content">
+
+							<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+
+						
+
+						<span class="product__category">Blazers</span>
+					   </div>
+
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product product--horizontal">
+						<div class="product__img">
+							<img src="img/1.png" alt="">
+							
+						</div>
+						<div class="product__content">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<span class="product__category">Blazers</span>
+					   </div>
+
+						
+						<div class="product__footer sale">
+							
+							<span class="price">$56</span>
+							<span class="pbadge"><img src="img/sale.png" alt=""></span>
+							<span class="discount">$60</span>
+						
+						</div>
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+
+					
+			
+					</div>
+
+
+				</div>
+
+
+
+				<div class="tab-cont hide" id="tab_3">
+					<div class="box-product">
+
+						<div class="product product--blocks">
+						
+						<div class="product__content">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/1.png" alt="">
+							
+						</div>
+					   </div>
+
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+								
+				<div class="product product--blocks">
+						
+						<div class="product__content">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/90x90_1.png" alt="">
+							
+						</div>
+					   </div>
+
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+
+						<div class="product product--blocks">
+						
+						<div class="product__content">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/90x90_2.png" alt="">
+							
+						</div>
+					   </div>
+
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						
+							
+					<div class="product product--blocks">
+						
+						<div class="product__content">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/90x90_3.png" alt="">
+							
+						</div>
+						<div class="product__footer sale">
+							<span class="pbadge"><img src="img/sale.png" alt=""></span>
+							<span class="price">$56</span>
+							<span class="discount">$60</span>
+						</div>
+					   </div>
+
+						
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+
+								<div class="product product--blocks">
+						
+						<div class="product__content">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/90x90_1.png" alt="">
+							
+						</div>
+						<div class="product__footer sale">
+							<span class="pbadge"><img src="img/sale.png" alt=""></span>
+							<span class="price">$56</span>
+							<span class="discount">$60</span>
+						</div>
+					   </div>
+
+						
+						<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<br>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+					</div>
+					
+			
+					
+
+
+				</div>
+				<div class="tab-cont " id="tab_2">
+					<div class="box-product">
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img9.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer sale">
+							<span class="pbadge"><img src="img/sale.png" alt=""></span>
+							<span class="price">$56</span>
+							<span class="discount">$60</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img6.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img10.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img14.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer hit">
+							<span class="pbadge"><img src="img/hit.png" alt=""></span>
+							<span class="price">$80</span>
+							
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img5.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img6.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#openModal">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img7.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img8.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer new">
+							<span class="pbadge"><img src="img/new.png" alt=""></span>
+							<span class="price">$70</span>
+							
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img9.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img10.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img11.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img12.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img13.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img14.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+						<div class="product">
+						<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
+						<div class="product__img">
+							<img src="img/product-img9.png" alt="">
+							<div class="product__card">
+								<select class="styler">
+									<option value="">size</option>
+									<option value="">S</option>
+									<option value="">L</option>
+									<option value="">M</option>
+								</select>
+								<a href="#" class="btn">Add to card</a>
+								<a href="#" class="favorite">
+									<span class="icon icon-heart-plus"></span>
+									Add to wishlist
+								</a>
+							</div>
+						</div>
+						<div class="product__footer">
+							<span class="price">$56</span>
+						</div>
+						</div>
+					</div>
+					</div>
+						
+
+				</div>
+				<div class="paginator">
+				<span class="paginator__item">2 page of 23</span>
+				<span class="paginator__item load"><span class="icon icon-reload"></span>Load more</span>
+				<span class="paginator__item">30 items</span>
+			</div>
+
+			</div>
+			
+
+		</div>
+			
+
+	
+
+</div>
+	</main>		
+	
+	<footer>
+		<div class="wrapper"></div>
+	</footer>
+
+
+<div class="md-overlay"></div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
+<script src="js/common.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+<script src="js/stepper.min.js"></script>
+<script>
+var polyfilter_scriptpath = '/js/';
+</script>
+<script src="js/goods_slider.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+        console.log(scrollbar);
+        document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+            document.body.style.overflow = 'hidden';
+            document.querySelector('#openModal').style.marginLeft = scrollbar;
+        });
+        document.querySelector('[href="#close"]').addEventListener('click', function () {
+            document.body.style.overflow = 'visible';
+            document.querySelector('#openModal').style.marginLeft = '0px';
+        });
+    });
+</script>
+
+</body>
+</html>

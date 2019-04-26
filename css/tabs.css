@@ -1,0 +1,121 @@
+html
+	
+
+body
+	background: #FFF
+	
+
+/* Базовый контейнер табов */
+.tabList {
+	min-width: 320px;
+	max-width: 900px;
+	padding: 0px;
+	margin: 0 auto;
+
+
+
+}
+
+.tabList>section {
+	width: 450px;
+	display: none;
+	padding: 10px;
+	position: absolute;
+    background: #fff;
+    margin-left: 250px;
+    margin-top: -150px;
+
+
+}
+.tabList>section>p {
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Прячем чекбоксы */
+.tabList>input {
+	display: none;
+	margin: 0px;
+
+
+}
+/* Стили переключателей вкладок (табов) */
+.tabList>label {
+	
+
+	width: 220px;
+	margin: 0 0 -1px;
+	padding: 1px 50px 5px;
+	font-weight: 500;
+	text-align: center;
+	color: #aaa;
+	border: 1px solid #ececec;
+
+	/*border-width: 1px 1px 1px 1px;*/
+	background: #fff;
+	
+}
+
+
+.tabList>label:hover {
+	
+	cursor: pointer;
+	color: #888;
+	
+}
+/* Стили для активной вкладки */
+.tabList>input:checked+label {
+	color: #222;
+	background: #f3f3f3;
+	border-right: 6px solid #000;
+	border-bottom: 1px solid #ececec;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+
+
+}
+
+ 
+@media screen and (max-width: 680px) {
+	.tabList>label {
+		font-size: 18;
+		
+	}
+	.tabList>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabList>label {
+		padding: 15px;
+	}
+}

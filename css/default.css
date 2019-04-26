@@ -1,0 +1,33 @@
+
+
+a {
+	color: #c0392b;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #9ba6be;
+}
+
+/* Header Style */
+
+
+button {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #000;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+}
+
+button:hover {
+	background: #1f4ba5;
+}
